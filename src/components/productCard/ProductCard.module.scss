@@ -1,0 +1,35 @@
+.productCard_wrapper {
+  -webkit-box-shadow: 1px 2px 8px 6px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 1px 2px 8px 6px rgba(34, 60, 80, 0.2);
+  box-shadow: 1px 2px 8px 6px rgba(34, 60, 80, 0.2);
+  .image {
+    height: 80%;
+    width: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .desc{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button{
+        padding: 10px;
+        border: none;
+        background-color: rgb(81, 81, 167);
+        border-radius: 15px;
+        color: white;
+        cursor: pointer;
+        transition: ease-in-out .2s;
+        &:hover{
+            background-color: rgb(121, 121, 190);
+        }
+    }
+  }
+}
+#price{
+    font-weight: 800;
+    font-size: 20px;
+}

@@ -1,0 +1,84 @@
+.product_wrapper {
+  height: 90vh;
+  padding: 20px;
+  overflow-y: scroll;
+  .main_right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    @media (max-width: 1100px) {
+    grid-template-columns: repeat(2, 1fr);
+      
+    }
+    @media (max-width: 800px) {
+      grid-template-columns: repeat(1, 1fr);
+        
+      }
+  }
+  .paginate_wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    .active {
+      list-style-type: none;
+      width: 30px;
+      height: 30px;
+      border: 1px rgb(109, 109, 187) solid;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      cursor: pointer;
+      background: rgb(109, 109, 187);
+    }
+    .nonActive {
+      list-style-type: none;
+      width: 30px;
+      height: 30px;
+      border: 1px #ccc solid;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      cursor: pointer;
+    }
+    .nonActiveArrow {
+      width: 30px;
+      height: 30px;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    .nonActiveNextArrow,
+    .nonActivePrevArrow {
+      width: 30px;
+      height: 30px;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    .nonActiveNextArrow {
+      > img {
+        transform: rotate(180deg);
+      }
+    }
+    .prevArrow {
+      > img{
+        transform: rotate(180deg);
+      }
+    }
+    .prevArrow,
+    .nextArrow {
+      width: 30px;
+      height: 30px;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.basket_card_wrapper {
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  >img {
+    height: 100%;
+  }
+  .counter {
+    width: 100px;
+    height: 30px;
+    border-radius: 12px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    img{
+        width: 20px;
+    }
+    button {
+      border: none;
+      background: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    button:first-child {
+      border-radius: 12px 0 0 12px;
+    }
+    button:last-child {
+      border-radius: 0 12px 12px 0;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+}
